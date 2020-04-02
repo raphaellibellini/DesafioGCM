@@ -1,10 +1,10 @@
-function formatCnpjCpf(document.getElementById("cpfId").value)
-{
-  const cnpjCpf = value.replace(/\D/g, '');
-  
-  if (cnpjCpf.length === 11) {
-    return cnpjCpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "\$1.\$2.\$3-\$4");
-  } 
-  
-  return cnpjCpf.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g, "\$1.\$2.\$3/\$4-\$5");
+let limpa = () => {
+  document.getElementById('nomeId').value='';
+  document.getElementById('endId').value='';
+  document.getElementById('rgId').value='';
+  document.getElementById('cpfId').value='';
+  document.getElementById('customRadioInline1').checked = false;
+  document.getElementById('customRadioInline2').checked = false;
+  document.getElementById('nascId').value='';
+  document.getElementById('cbx').value = 0;
 }

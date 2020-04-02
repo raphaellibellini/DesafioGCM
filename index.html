@@ -27,7 +27,7 @@
       </div>
       <div class="form-group">
         <label>Data de nascimento</label>
-        <input type="date" class="form-control col-md-2" id="endId" maxlength="13">
+        <input type="date" class="form-control col-md-2" id="nascId" maxlength="13">
       </div>
       <form>
         <div class="form-row col-md-6">
@@ -49,18 +49,18 @@
       <br>
       <div class="form-group col-md-5">
         <label for="inputState">Situação Civil</label>
-        <select id="inputState" class="form-control">
-          <option selected>Selecione...</option>
-          <option>Solteiro</option>
-          <option>Casado</option>
-          <option>Divorciado</option>
+        <select id="cbx" class="form-control">
+          <option selected value="0">Selecione...</option>
+          <option value="1">Solteiro</option>
+          <option value="2">Casado</option>
+          <option value="3">Divorciado</option>
         </select>
       </div>
       <br>
       <div class="row">
         <div></div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="clear" class="btn btn-danger">Limpar</button>
+        <button type="submit" class="btn btn-primary" onclick="limpa();">Submit</button>
+        <button type="clear" class="btn btn-danger" onclick="limpa();">Limpar</button>
       </div>      
     </form>
 
