@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Cadastro de Pessoa</title>
   </head>
   <body>
@@ -17,15 +17,15 @@
     </nav>
 
     <form>
-      <div class="form-group">
+      <div class="form-group inputs">
         <label>Nome</label>
         <input type="text" class="form-control col-md-5" id="nomeId" aria-describedby="emailHelp" maxlength="55">
       </div>
-      <div class="form-group">
+      <div class="form-group inputs">
         <label>Endereço</label>
         <input type="text" class="form-control col-md-5" id="endId" maxlength="55">
       </div>
-      <div class="form-group">
+      <div class="form-group inputs">
         <label>Data de nascimento</label>
         <input type="date" class="form-control col-md-2" id="nascId" maxlength="13">
       </div>
@@ -36,7 +36,7 @@
         </div>
       </form>
       <br>
-      <label class="form-check-label">Sexo</label>
+      <label class="form-check-label labelSexo">Sexo</label>
       <div class="custom-control custom-radio custom-control-inline">
         <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
         <label class="custom-control-label" for="customRadioInline1">Masculino</label>
@@ -47,9 +47,9 @@
       </div>
       <br>
       <br>
-      <div class="form-group col-md-5">
+      <div class="form-group col-md-5 selectSC">
         <label for="inputState">Situação Civil</label>
-        <select id="cbx" class="form-control">
+        <select id="cbx" class="form-control mySelect">
           <option selected value="0">Selecione...</option>
           <option value="1">Solteiro</option>
           <option value="2">Casado</option>
@@ -58,7 +58,6 @@
       </div>
       <br>
       <div class="row">
-        <div></div>
         <button type="submit" class="btn btn-primary" onclick="limpa();">Submit</button>
         <button type="clear" class="btn btn-danger" onclick="limpa();">Limpar</button>
       </div>      
